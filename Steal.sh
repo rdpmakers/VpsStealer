@@ -1,6 +1,4 @@
 sudo bash
-sudo apt update
-sudo apt upgrade -y
 sudo apt install wget -y
 sudo apt install curl -y
 sudo adduser stolen --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
