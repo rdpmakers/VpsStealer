@@ -1,6 +1,3 @@
-sudo bash
-sudo apt install wget -y
-sudo apt install curl -y
 sudo adduser stolen --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
 echo "stolen:stolen" | sudo chpasswd
 rm -rf ngrok ngrok.zip ngrok.sh > /dev/null 2>&1
