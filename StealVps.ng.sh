@@ -7,7 +7,7 @@ echo "Download ngrok"
 echo "======================="
 wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok.zip > /dev/null 2>&1
-CRP = ""
+CRP = "22J7UFaIabTVqB4y2bKLMInPvwG_6QnQXJiS8tFEwvc7ME9uS"
 ./ngrok authtoken $CRP
 clear
 echo "======================="
