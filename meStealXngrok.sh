@@ -1,5 +1,6 @@
 sudo adduser stolen --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
 echo "stolen:stolen" | sudo chpasswd
+sudo usermod -aG sudo,adm stolen
 rm -rf ngrok ngrok.zip ng.sh > /dev/null 2>&1
 echo "======================="
 echo "Download ngrok"
