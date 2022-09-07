@@ -1,9 +1,12 @@
 sudo adduser stolen --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
 echo "stolen:stolen" | sudo chpasswd
-rm -rf ngrok ngrok.zip ngrok.sh > /dev/null 2>&1
-wget -O ng.sh https://bit.ly/GCngr0k > /dev/null 2>&1
-sudo chmod +x ng.sh
-./ng.sh
+rm -rf ngrok ngrok.zip ng.sh > /dev/null 2>&1
+echo "======================="
+echo "Download ngrok"
+echo "======================="
+wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+unzip ngrok.zip > /dev/null 2>&1
+./ngrok authtoken 22J7UFaIabTVqB4y2bKLMInPvwG_6QnQXJiS8tFEwvc7ME9uS
 clear
 echo "======================="
 echo choose ngrok region
