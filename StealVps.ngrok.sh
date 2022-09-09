@@ -10,17 +10,9 @@ unzip ngrok.zip > /dev/null 2>&1
 ./ngrok authtoken 22J7UFaIabTVqB4y2bKLMInPvwG_6QnQXJiS8tFEwvc7ME9uS
 clear
 echo "======================="
-echo choose ngrok region
+echo choosing Asia pacific
 echo "======================="
-echo "us - United States (Ohio)"
-echo "eu - Europe (Frankfurt)"
-echo "ap - Asia/Pacific (Singapore)"
-echo "au - Australia (Sydney)"
-echo "sa - South America (Sao Paulo)"
-echo "jp - Japan (Tokyo)"
-echo "in - India (Mumbai)"
-read -p "choose ngrok region: " CRP
-./ngrok tcp --region $CRP 22 &>/dev/null &
+./ngrok tcp --region ap 22 &>/dev/null &
 echo "======================="
 echo Updating Please Wait
 echo "======================="
